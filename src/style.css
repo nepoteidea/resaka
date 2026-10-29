@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Colors from the v1 prototype (Claude Design). */
+@theme {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'DM Sans', sans-serif;
+
+  --color-ink: #0e1320;
+  --color-ink-text: #f2f4f8;
+  --color-panel: #182036;
+  --color-panel-hi: #1f2944;
+  --color-edge: #26304a;
+  --color-line: #2e3956;
+  --color-rule: #1e2740;
+  --color-track: #1c2742;
+  --color-muted: #a3acc2;
+  --color-soft: #d5dae6;
+  --color-faint: #8e98b0;
+  --color-dim: #4a5573;
+  --color-accent: #f5b83d;
+  --color-water: #5cc8ff;
+  --color-water-soft: #9addff;
+  --color-water-bg: #12304a;
+  --color-water-line: #1e4a6e;
+  --color-water-ink: #06202f;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-ink font-sans text-ink-text antialiased;
+  }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-water;
+  }
+}
