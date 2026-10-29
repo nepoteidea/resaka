@@ -1,0 +1,11 @@
+{
+  "name": "Resaka",
+  "short_name": "Resaka",
+  "description": "Log tonight's drinks; see calories and tomorrow's water target.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e1320",
+  "theme_color": "#0e1320",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
